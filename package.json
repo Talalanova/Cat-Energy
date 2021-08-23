@@ -1,0 +1,22 @@
+{
+  "name": "cat-energy",
+  "version": "1.0.0",
+  "description": "^C",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Talalanova/Cat-Energy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Talalanova/Cat-Energy/issues"
+  },
+  "homepage": "https://github.com/Talalanova/Cat-Energy#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
