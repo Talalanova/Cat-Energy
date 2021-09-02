@@ -16,7 +16,9 @@ const styles = () => {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(less())
+    .pipe(less({
+      plugins: [require('less-plugin-glob')]
+    }))
     .pipe(postcss([
       autoprefixer(),
       csso()
