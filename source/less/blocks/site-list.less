@@ -1,7 +1,15 @@
 .site-list {
   .list-clean();
+  text-align: center;
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
+.site-list__item {
+  padding: 10px 0px;
+}
 .site-list__link {
   text-decoration: none;
+  color: black;
 }
