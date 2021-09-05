@@ -4,3 +4,40 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+.bar__scale {
+  width: 76px;
+  height: 5px;
+  border: 1px solid @frame-grey;
+  border-radius: 6px;
+  background-color: @contrast-text;
+  padding: 5px;
+
+  @media (min-width: @tablet-width) {
+    width: 428px;
+    height: 6px;
+    background-color: @scale-grey;
+    padding: 0;
+    border: none;
+    position: relative;
+  }
+}
+
+.bar__toggle {
+  width: 35px;
+  height: 6px;
+  background-color: @basic-green;
+  border-radius: 6px;
+
+  @media (min-width: @tablet-width) {
+    width: 8px;
+    height: 8px;
+    background-color: @basic-green;
+    padding: 0;
+    border: 8px solid @contrast-text;
+    border-radius: 45px;
+    position: absolute;
+    left: 47%;
+    top: -10px;
+  }
+}

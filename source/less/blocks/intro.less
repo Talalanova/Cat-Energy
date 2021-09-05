@@ -3,14 +3,16 @@
   background-repeat: no-repeat;
   background-position: 0 180px,top;
   height: 482px;
-
+  color: @contrast-text;
+  text-align: center;
   @media (min-width: @tablet-width) {
     background-image: url(../../img/intro-tablet.png);
     height: 810px;
+    color: @accent-text;
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url(../../img/intro-desktop.png), url(../../img/intro-cat-desktop.png);
+    background-image: url(../../img/intro-desktop.png);
     height: 810px;
   }
 }
@@ -27,9 +29,8 @@
 }
 
 .intro__button {
-  font-weight: normal;
+  .curent-button();
+
   font-size: 14px;
   line-height: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
 }

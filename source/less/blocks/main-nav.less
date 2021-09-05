@@ -9,7 +9,26 @@
     display: grid;
     grid-template-columns: min-content 1fr;
   }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
 }
+
+.main-nav::after {
+  @media (min-width: @desktop-width) {
+      position: absolute;
+      content: "";
+      background-image: url(../../img/intro-cat-desktop.png);
+      background-repeat: no-repeat;
+      background-position-x: right;
+      right: 0px;
+      z-index: -1;
+      height: 810px;
+      width: 500px;
+    }
+  }
+
 
 .main-nav--closed .main-nav__list {
   @media (max-width: 767px) {

@@ -86,9 +86,18 @@
                     <p class="statistics__payment">Затраты на питание: 15 000 руб. </p>
                 </div>
                 <div class="review__bar bar">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/before-desktop.png">
+                    <img src="img/before-mobile.png" alt="Толстенький кот">
+                  </picture>
+                  <picture class="visually-hidden">
+                    <source media="(min-width: 768px)" srcset="img/after-desktop.png">
+                    <img src="img/after-mobile.png" alt="Похудевший кот">
+                  </picture>
                     <p class="bar__text">Было</p>
-                    <div class="bar__scale"></div>
-                    <div class="bar__toggle"></div>
+                    <div class="bar__scale">
+                      <div class="bar__toggle"></div>
+                    </div>
                     <p class="bar__text">Стало</p>
                 </div>
             </section>
