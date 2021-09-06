@@ -72,6 +72,7 @@
               </ul>
             </section>
             <section class="review">
+              <div class="review__text-wrapper">
                 <h2 class="review__title">Живой пример</h2>
                 <p class="review__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
                 <div class="review__statistics statistics">
@@ -85,15 +86,18 @@
                     </div>
                     <p class="statistics__payment">Затраты на питание: 15 000 руб. </p>
                 </div>
+              </div>
+              <div class="review__slider">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/before-desktop.png">
+                  <img src="img/before-mobile.png" alt="Толстенький кот">
+                </picture>
+                <picture class="visually-hidden">
+                  <source media="(min-width: 768px)" srcset="img/after-desktop.png">
+                  <img src="img/after-mobile.png" alt="Похудевший кот">
+                </picture>
+              </div>
                 <div class="review__bar bar">
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/before-desktop.png">
-                    <img src="img/before-mobile.png" alt="Толстенький кот">
-                  </picture>
-                  <picture class="visually-hidden">
-                    <source media="(min-width: 768px)" srcset="img/after-desktop.png">
-                    <img src="img/after-mobile.png" alt="Похудевший кот">
-                  </picture>
                     <p class="bar__text">Было</p>
                     <div class="bar__scale">
                       <div class="bar__toggle"></div>
