@@ -5,10 +5,14 @@
   height: 482px;
   color: @contrast-text;
   text-align: center;
+  padding: 27px 35px;
   @media (min-width: @tablet-width) {
     background-image: url(../../img/intro-tablet.png);
-    height: 810px;
+    background-position: 0 300px;
+    height: 830px;
     color: @accent-text;
+    text-align: left;
+    padding: 27px 105px;
   }
 
   @media (min-width: @desktop-width) {
@@ -20,12 +24,21 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .intro__text {
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .intro__button {
@@ -33,4 +46,11 @@
 
   font-size: 14px;
   line-height: 18px;
+  margin-top: 280px;
+  display: inline-block;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
 }

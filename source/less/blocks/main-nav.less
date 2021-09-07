@@ -8,10 +8,16 @@
 @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: min-content 1fr;
+    column-gap: 95px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
+    column-gap: 305px;
+    padding: 0 110px;
   }
 }
 
@@ -22,10 +28,9 @@
       background-image: url(../../img/intro-cat-desktop.png);
       background-repeat: no-repeat;
       background-position-x: right;
-      right: 0px;
       z-index: -1;
       height: 810px;
-      width: 500px;
+      width: 100%;
     }
   }
 
@@ -38,8 +43,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 34px;
+  right: -5px;
   border: none;
 
   @media (min-width: @tablet-width) {
@@ -78,4 +83,8 @@
   height: 4px;
   background-color: black;
   box-shadow: 0 8px 0 0 black, 0 16px 0 0 black;
+}
+
+.main-nav__logo {
+  padding: 12px 0px 22px 0px;
 }

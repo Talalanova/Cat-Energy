@@ -9,8 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="page__body container">
-
-        <header class="page-header">
+  <header class="page-header">
             <nav class="main-nav main-nav--open">
                 <div class="main-nav__logo">
                     <a href="#">
@@ -42,8 +41,8 @@
                     <span class="visually-hidden">Открыть меню</span>
                 </button>
             </nav>
-        </header>
-        <main class="page-main">
+  </header>
+  <main class="page-main">
             <section class="intro">
                 <h1 class="intro__title">Функциональное питание для котов</h1>
                 <p class="intro__text">Занялся собой? Займись котом!</p>
@@ -51,13 +50,13 @@
             </section>
             <section class="programs">
                 <h2 class="programs__title visually-hidden">Варианты программ</h2>
-                <div class="programs__slim">
-                    <h3 class="programs__sub-title">Похудение</h3>
+                <div class="programs__item">
+                    <h3 class="programs__sub-title programs__sub-title--loose">Похудение</h3>
                     <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                     <a class="programs__button" href="#">Каталог slim</a>
                 </div>
-                <div class="programs__fit">
-                    <h3 class="programs__sub-title">Набор массы</h3>
+                <div class="programs__item">
+                    <h3 class="programs__sub-title programs__sub-title--fit">Набор массы</h3>
                     <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
                     <a class="programs__button" href="#">Каталог pro</a>
                 </div>
@@ -76,24 +75,26 @@
                 <h2 class="review__title">Живой пример</h2>
                 <p class="review__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
                 <div class="review__statistics statistics">
-                    <div class="statistics__weight">
+                    <div class="statistics__item">
                         <p class="statistics__value">5 кг</p>
                         <span class="statistics__parameter">снижение веса</span>
                     </div>
-                    <div class="statistics__time">
+                    <div class="statistics__item">
                         <p class="statistics__value">60 дней</p>
                         <span class="statistics__parameter">затрачено времени</span>
                     </div>
-                    <p class="statistics__payment">Затраты на питание: 15 000 руб. </p>
+                    <p class="statistics__item statistics__item--payment">Затраты на питание: 15 000 руб. </p>
                 </div>
               </div>
               <div class="review__slider">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/before-desktop.png">
+                <picture class="review__pic">
+                  <source media="(min-width: 1200px)" srcset="img/before-desktop.png">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet.png">
                   <img src="img/before-mobile.png" alt="Толстенький кот">
                 </picture>
-                <picture class="visually-hidden">
-                  <source media="(min-width: 768px)" srcset="img/after-desktop.png">
+                <picture class="review__pic">
+                  <source media="(min-width: 1200px)" srcset="img/after-desktop.png">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet.png">
                   <img src="img/after-mobile.png" alt="Похудевший кот">
                 </picture>
               </div>
@@ -105,8 +106,8 @@
                     <p class="bar__text">Стало</p>
                 </div>
             </section>
-        </main>
-        <footer class="page-footer">
+  </main>
+  <footer class="page-footer">
             <div class="contacts">
                 <h2 class="contacts__title visually-hidden">Адрес</h2>
                 <p class="contacts__sub-title">Приглашаем к сотрудничеству дилеров!</p>
@@ -173,6 +174,5 @@
                     </a>
                   </div>
             </div>
-        </footer>
-
+  </footer>
 </body>
