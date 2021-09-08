@@ -4,7 +4,9 @@
     padding: 0 30px;
   }
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    padding: 60px 110px;
+    display: flex;
+    column-gap: 30px;
   }
 }
 
@@ -27,6 +29,9 @@
     font-size: 36px;
     line-height: 36px;
   }
+  @media (min-width: @desktop-width) {
+    padding-left: 120px;
+  }
 }
 
 .programs__sub-title--loose::before {
@@ -43,6 +48,13 @@
     background-size: 200px 211px;
     left: 450px;
   }
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    left: 0;
+    top: -40px;
+  }
 }
 
 .programs__sub-title--fit::before {
@@ -58,6 +70,13 @@
     height: 200px;
     background-size: 268px 200px;
     left: 400px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 100px;
+    background-size: 134px 100px;
+    left: 0;
+    top: -40px;
   }
 }
 
